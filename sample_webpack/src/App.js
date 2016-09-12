@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import Component from './Component';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import MyAwesomeReactComponent from './MyAwesomeReactComponent';
+
+injectTapEventPlugin();
 
 const App = () => (
   <MuiThemeProvider>
-    <Component />
+    <MyAwesomeReactComponent />
   </MuiThemeProvider>
 );
 

@@ -1,11 +1,13 @@
 module.exports = {
+  context: __dirname + "/src",
   entry: {
-    bundle: './src/App.js',
-    index: './index.html'
+    js: "./App.js",
+    css: "./main.css",
+    html: "./index.html",
   },
   output: {
-    path: './dist',
-    filename: 'bundle.js'
+    path: __dirname + "/dist",
+    filename: 'bundle.js',
   },
   devServer: {
     contentBase: 'dist',
@@ -30,8 +32,5 @@ module.exports = {
         loader: 'file?name=[path][name].[ext]'
       }
     ]
-  },
-  resolve: {
-    modulesDirectories: ['node_modules', './src']
   }
 };

@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import RaisedButton from 'material-ui/RaisedButton';
 
-const MyAwesomeReactComponent = () => (
-  <RaisedButton label="Default" />
-);
+class MyAwesomeReactComponent extends Component {
+  render() {
+    return (
+      <RaisedButton label="Default" />
+    )
+  }
+}
 
 export default MyAwesomeReactComponent;

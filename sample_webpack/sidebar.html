@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+  p {
+    margin: 0;
+  }
+  header {
+    width: 100%;
+    height: 80px;
+    background-color: #81DAF5;
+  }
+  .contents {
+    height: 100vh;
+    position: relative;
+    background-color: #F2E0F7;
+
+  }
+  .side_area {
+    width: 300px;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #E0F8E0;
+  }
+  .side_area_title {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  .side_content {
+    margin: 20px auto;
+    border: 1px solid #666;
+    background-color: #fff;
+    padding: 5px 10px 10px;
+    border-radius: 5px;
+  }
+  .side_content_title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 auto 15px;
+  }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <p>header</p>
+    </header>
+    <div class="contents">
+      <div class="main_area">
+        <p>MainArea</p>
+      </div>
+      <div class="side_area">
+        <h1 class="side_area_title">side area</h1>
+        <div class="side_content">
+          <h2 class="side_content_title">React</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+        <div class="side_content">
+          <h2 class="side_content_title">ハンズオン</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ipsum id deleniti, nesciunt illum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

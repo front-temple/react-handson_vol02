@@ -4,6 +4,8 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import MyAwesomeReactComponent from './MyAwesomeReactComponent';
 
+import './App.styl';
+
 injectTapEventPlugin();
 
 class App extends Component {

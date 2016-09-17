@@ -2,7 +2,6 @@ module.exports = {
   context: __dirname + "/src",
   entry: {
     js: "./App.js",
-    css: "./App.css",
     html: "./index.html",
   },
   output: {
@@ -26,6 +25,10 @@ module.exports = {
       {
         test: /\.css/,
         loader: 'style!css'
+      },
+      {
+        test: /\.styl/,
+        loader: 'style!css!stylus'
       },
       {
         test: /\.html$/,
